@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppointmentService } from '../appointment.service';
 import { Appointment } from '../Appointment';
 import { Observable } from 'rxjs';
-import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+
 
 export interface Doctor {
   _id: string;
@@ -22,7 +22,7 @@ export interface Doctor {
 export class AppointmentBookingComponent implements OnInit {
   bookingForm: FormGroup;
   doctors: Doctor[]|any; // Define an Observable to hold the list of doctors
-  bsConfig: Partial<BsDatepickerConfig>; // Partial type to customize the datepicker configuration
+  // bsConfig: Partial<BsDatepickerConfig>; // Partial type to customize the datepicker configuration
 
 
 
@@ -32,11 +32,11 @@ export class AppointmentBookingComponent implements OnInit {
       doctor: ['', Validators.required],
       timeSlot: ['', Validators.required]
     });
-    this.bsConfig = {
-      showWeekNumbers: false,
-      containerClass: 'theme-default', // Optional CSS class for the datepicker container
-      dateInputFormat: 'YYYY-MM-DDTHH:mm:ss' // Date format for the selected value
-    };
+    // this.bsConfig = {
+    //   showWeekNumbers: false,
+    //   containerClass: 'theme-default', // Optional CSS class for the datepicker container
+    //   dateInputFormat: 'YYYY-MM-DDTHH:mm:ss' // Date format for the selected value
+    // };
   }
 
   ngOnInit() {

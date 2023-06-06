@@ -14,7 +14,6 @@ import { AppointmentBookingComponent } from './appointment-booking/appointment-b
 import { PrescriptionFormComponent } from './prescription-form/prescription-form.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
