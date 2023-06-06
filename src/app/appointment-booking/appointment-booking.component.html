@@ -21,7 +21,7 @@
   <div class="form-group">
     <label for="timeSlot"><i class="bi bi-clock-fill"></i> Date/Time Slot:</label>
     <input type="text" id="timeSlot" formControlName="timeSlot" class="form-control"
-           [bsConfig]="bsConfig" bsDatepicker placeholder="YYYY-MM-DDThh:mm:ss"> <!-- Use the bsConfig and bsDatepicker directives -->
+            placeholder="YYYY-MM-DDThh:mm:ss"> <!-- Use the bsConfig and bsDatepicker directives -->
     <div *ngIf="bookingForm.controls['timeSlot'].invalid && bookingForm.controls['timeSlot'].touched" class="error-message">
       <div *ngIf="bookingForm.controls['timeSlot'].hasError('required')">Time Slot is required</div>
     </div>

@@ -37,7 +37,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    BsDatepickerModule.forRoot(),
+    // BsDatepickerModule.forRoot(),
     BrowserAnimationsModule // or NoopAnimationsModule
 
   ],
