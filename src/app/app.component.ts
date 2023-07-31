@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hospital-app';
+  title = 'BookMyDoctor-app';
   userId: string | null = null;
   private userIdSubject: Subject<string | null> = new Subject<string | null>();
   role: string | any;
